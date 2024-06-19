@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+    width: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: max-height 0.5s ease, padding 0.5s ease;
+    background-color: #fff;
+  max-height: 500px; /* initial height */
+    padding-bottom: 0; /* initial padding */
+    height:700px;
+}
+
+.news-image {
+    width: 100%;
+    height:250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: scale 0.5s ease;
+}
+
+.news-image:hover{
+    scale: 1.1;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.card-description {
+    margin: 10px 0;
+    color: #555;
+}
